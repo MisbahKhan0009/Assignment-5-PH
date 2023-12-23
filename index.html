@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ICC Test Championship</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Sevillana&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-zinc-300">
+    <header
+      class="bg-gradient-to-r from-gray-800 to-slate-800 pt-10 pb-10 flex flex-col items-center"
+    >
+      <img
+        class="w-1/2 h-1/2 img-fluid bg-zinc-200 px-5 py-10 rounded-lg"
+        src="images/Logo.png"
+        alt=""
+      />
+      <h1
+        style="font-family: 'Permanent Marker', cursive"
+        class="text-6xl font-bold text-zinc-200 py-12 px-5 text-center"
+      >
+        ICC Test Championship
+      </h1>
+      <p
+        class="text-xl font-thin font-bold text-zinc-200 py-6 px-5 mb-12 text-center"
+      >
+        The ICC (International Cricket Council) Test Championship is a premier
+        international cricket <br />
+        competition that features the world's top Test-playing nations.
+        Introduced to bring greater context <br />
+        and significance to Test cricket, the championship spans a two-year
+        cycle and involves nine of the elite cricket teams. <br />
+        <span class="font-bold">Select your team wisely.</span>
+      </p>
+    </header>
+
+    <main>
+      <section class="container mx-auto">
+        <div class="container mx-auto grid grid-cols-4 gap-4 p-4">
+          <!-- First Row -->
+
+          <div class="col-span-3 grid grid-cols-3 gap-4">
+            <!-- Card 1 -->
+            <div
+              id="player1"
+              class="player-card bg-white p-2 rounded-md shadow-md flex flex-col-reverse items-center"
+            >
+              <button
+                id="select-btn"
+                class="mt-4 mb-4 mx-auto bg-slate-800 hover:bg-slate-700 text-md px-5 py-2 rounded-md mx-auto text-white"
+              >
+                Select
+              </button>
+              <p class="text-md text-center">Wicketkeeper, Batsman</p>
+              <p class="text-xl mt-4 font-bold text-center">MS Dhoni</p>
+
+              <img
+                class="m-0 w-full rounded-lg h-48   object-cover"
+                src="images/Dhoni.jpg"
+                alt=""
+              />
+            </div>
+
+            <!-- Card 2 -->
+            <div
+              id="player2"
+              class="player-card bg-white p-2 rounded-md shadow-md flex flex-col-reverse items-center"
+            >
+              <button
+                id="select-btn"
+                class="mt-4 mb-4 mx-auto bg-slate-800 hover:bg-slate-700 text-md px-5 py-2 rounded-md mx-auto text-white"
+              >
+                Select
+              </button>
+              <p class="text-md text-center">Spinner</p>
+              <p class="text-xl mt-4 font-bold text-center">Shane Warne</p>
+
+              <img
+                class="m-0 w-full rounded-lg h-48 object-cover"
+                src="images/shane-warne.webp"
+                alt=""
+              />
+            </div>
+
+            <!-- Card 3 -->
+            <div
+              id="player3"
+              class="player-card bg-white p-2 rounded-md shadow-md flex flex-col-reverse items-center"
+            >
+              <button
+                id="select-btn"
+                class="mt-4 mb-4 mx-auto bg-slate-800 hover:bg-slate-700 text-md px-5 py-2 rounded-md mx-auto text-white"
+              >
+                Select
+              </button>
+              <p class="text-md text-center">Allrounder</p>
+              <p class="text-xl mt-4 font-bold text-center">Sakib Al Hasan</p>
+
+              <img
+                class="m-0 w-full rounded-lg h-48 object-cover"
+                src="images/Sakib.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <!-- Right Sidebar -->
+          <div class="col-span-1 bg-white p-4 rounded-md shadow-md font-bold">
+            <p class="text-center text-xl mb-5 mt-3">Selected-V</p>
+            <ul id="selectedPlayers"></ul>
+          </div>
+
+          <!-- Second Row -->
+          <div class="col-span-3 grid grid-cols-3 gap-4 h-5/6 overflow-y-auto">
+            <!-- Card 4 -->
+            <div
+              id="player4"
+              class="player-card bg-white p-2 rounded-md shadow-md flex flex-col-reverse items-center"
+            >
+              <button
+                id="select-btn"
+                class="mt-4 mb-4 mx-auto bg-slate-800 hover:bg-slate-700 text-md px-5 py-2 rounded-md mx-auto text-white"
+              >
+                Select
+              </button>
+              <p class="text-md text-center">Wicketkeeper, Batsman</p>
+              <p class="text-xl mt-4 font-bold text-center">Kumar Shangakara</p>
+
+              <img
+                class="m-0 w-full rounded-lg h-48 object-cover"
+                src="images/Kumar-Sangakkara.jpg"
+                alt=""
+              />
+            </div>
+
+            <!-- Card 5 -->
+            <div
+              id="player5"
+              class="player-card bg-white p-2 rounded-md shadow-md flex flex-col-reverse items-center"
+            >
+              <button
+                id="select-btn"
+                class="mt-4 mb-4 mx-auto bg-slate-800 hover:bg-slate-700 text-md px-5 py-2 rounded-md mx-auto text-white"
+              >
+                Select
+              </button>
+              <p class="text-md text-center">Allrounder</p>
+              <p class="text-xl mt-4 font-bold text-center">Mahmudullah</p>
+
+              <img
+                class="m-0 w-full rounded-lg h-48 object-cover"
+                src="images/mahmudullah.jpg"
+                alt=""
+              />
+            </div>
+
+            <!-- Card 6 -->
+            <div
+              id="player6"
+              class="player-card bg-white p-2 rounded-md shadow-md flex flex-col-reverse items-center"
+            >
+              <button
+                id="select-btn"
+                class="mt-4 mb-4 mx-auto bg-slate-800 hover:bg-slate-700 text-md px-5 py-2 rounded-md mx-auto text-white"
+              >
+                Select
+              </button>
+              <p class="text-md text-center">Fast bowler</p>
+              <p class="text-xl mt-4 font-bold text-center">Pat Kammins</p>
+
+              <img
+                class="m-0 w-full rounded-lg h-48 object-cover"
+                src="images/Pat-Cummins.png"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <!-- Right Sidebar 2 -->
+          <div
+            class="col-span-1 bg-white p-4 rounded-md shadow-md flex flex-col items-center overflow-y-auto"
+          >
+            <p class="text-center text-xl mb-5 font-bold mt-3">Budget</p>
+            <div class="flex flex-row justify-between items-center">
+              <p>Per Player</p>
+              <input
+                id="per-player-cost"
+                class="w-1/2 p-1 border border-gray-500 rounded-md"
+                type="number"
+                name=""
+                id=""
+              />
+            </div>
+            <button
+              id="calculate-per-player"
+              class="mt-4 mb-4 mx-auto bg-slate-800 hover:bg-slate-700 text-md px-5 py-2 rounded-md mx-auto text-white"
+            >
+              Calculate
+            </button>
+            <p class="mb-4 font-semibold">
+              Player Expense $<span id="player-expense-display"></span>
+            </p>
+
+            <div class="flex flex-row justify-between items-center">
+              <p>Manager</p>
+              <input
+                id="manager-cost"
+                class="w-1/2 p-1 border border-gray-500 rounded-md"
+                type="number"
+                name=""
+                id=""
+              />
+            </div>
+
+            <div class="flex flex-row justify-between items-center">
+              <p>Coach</p>
+              <input
+                id="coach-cost"
+                class="w-1/2 mt-2 p-1 border border-gray-500 rounded-md"
+                type="number"
+                name=""
+                id=""
+              />
+            </div>
+
+            <button
+              id="calculate-total-cost"
+              class="mt-4 mb-4 mx-auto bg-slate-800 hover:bg-slate-700 text-md px-5 py-2 rounded-md mx-auto text-white"
+            >
+              Calculate
+            </button>
+
+            <p class="mb-4 font-semibold">
+              Total Expense $<span id="total-expense-display"></span>
+            </p>
+          </div>
+
+          <!-- Third Row -->
+          <div class="col-span-3 grid grid-cols-3 gap-4">
+            <!-- Card 7 -->
+            <div
+              id="player7"
+              class="player-card bg-white p-2 rounded-md shadow-md flex flex-col-reverse items-center"
+            >
+              <button
+                id="select-btn"
+                class="mt-4 mb-4 mx-auto bg-slate-800 hover:bg-slate-700 text-md px-5 py-2 rounded-md mx-auto text-white"
+              >
+                Select
+              </button>
+              <p class="text-md text-center">Allrounder</p>
+              <p class="text-xl mt-4 font-bold text-center">Misbah-Ul-Huq</p>
+
+              <img
+                class="m-0 w-full rounded-lg h-48 object-cover"
+                src="images/misbah-ul-haq.jpg"
+                alt=""
+              />
+            </div>
+
+            <!-- Card 8 -->
+            <div
+              id="player8"
+              class="player-card bg-white p-2 rounded-md shadow-md flex flex-col-reverse items-center"
+            >
+              <button
+                id="select-btn"
+                class="mt-4 mb-4 mx-auto bg-slate-800 hover:bg-slate-700 text-md px-5 py-2 rounded-md mx-auto text-white"
+              >
+                Select
+              </button>
+              <p class="text-md text-center">Fast Bowler</p>
+              <p class="text-xl mt-4 font-bold text-center">Mitchel Strac</p>
+
+              <img
+                class="m-0 w-full rounded-lg h-48 object-cover"
+                src="images/mitchel-starc.jpg"
+                alt=""
+              />
+            </div>
+
+            <!-- Card 9 -->
+            <div
+              id="player9"
+              class="player-card bg-white p-2 rounded-md shadow-md flex flex-col-reverse items-center"
+            >
+              <button
+                id="select-btn"
+                class="mt-4 mb-4 mx-auto bg-slate-800 hover:bg-slate-700 text-md px-5 py-2 rounded-md mx-auto text-white"
+              >
+                Select
+              </button>
+              <p class="text-md text-center">Fast Bowler</p>
+              <p class="text-xl mt-4 font-bold text-center">Mashrafe Mortaza</p>
+
+              <img
+                class="m-0 w-full rounded-lg h-48 object-cover"
+                src="images/mashrafe-mortaza.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/expense.js"></script>
+    <script src="js/select.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </body>
+
+  <footer class="bg-slate-800 text-center">
+    <p class="text-md pt-6 pb-6 font-thin text-white">
+      Copyright @ 2022 All Rights Reserved.
+    </p>
+  </footer>
+</html>
+
+
+
+
