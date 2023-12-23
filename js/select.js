@@ -1,7 +1,7 @@
 const playerCards = document.querySelectorAll(".player-card");
 const selectedPlayersList = document.getElementById("selectedPlayers");
 
-playerCards.forEach((playerCard, index) => {
+for (const playerCard of playerCards) {
   const selectBtn = playerCard.querySelector("#select-btn");
 
   selectBtn.addEventListener("click", function () {
@@ -23,4 +23,4 @@ playerCards.forEach((playerCard, index) => {
       alert("Alreary 5 Player Added");
     }
   });
-});
+}

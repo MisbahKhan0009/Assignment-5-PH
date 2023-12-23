@@ -1,3 +1,7 @@
+let perPlayerCostField = document.getElementById("per-player-cost").value;
+let managerCostField = document.getElementById("manager-cost").value;
+let CoachCostField = document.getElementById("coach-cost").value;
+
 document
   .getElementById("calculate-per-player")
   .addEventListener("click", function () {
@@ -5,8 +9,12 @@ document
       document.getElementById("per-player-cost").value
     );
 
-    document.getElementById("player-expense-display").innerText =
-      perPlayerCost * 5;
+    if (isNaN(perPlayerCostField.value)) {
+      alert("Please enter a number on expense field.");
+    } else {
+      document.getElementById("player-expense-display").innerText =
+        perPlayerCost * 5;
+    }
   });
 
 document
@@ -18,6 +26,10 @@ document
       document.getElementById("player-expense-display").innerText
     );
 
-    document.getElementById("total-expense-display").innerText =
-      managerCost + coachCost + playerCost;
+    if (isNaN(managerCostField.value) || isNaN(CoachCostField.value)) {
+      alert("Please enter a number on expense field.");
+    } else {
+      document.getElementById("total-expense-display").innerText =
+        managerCost + coachCost + playerCost;
+    }
   });
