@@ -9,7 +9,7 @@ document
       document.getElementById("per-player-cost").value
     );
 
-    if (isNaN(perPlayerCostField.value)) {
+    if (!isNaN(perPlayerCostField.value)) {
       alert("Please enter a number on expense field.");
     } else {
       document.getElementById("player-expense-display").innerText =
@@ -26,7 +26,7 @@ document
       document.getElementById("player-expense-display").innerText
     );
 
-    if (isNaN(managerCostField.value) || isNaN(CoachCostField.value)) {
+    if (!isNaN(managerCostField.value) || !isNaN(CoachCostField.value)) {
       alert("Please enter a number on expense field.");
     } else {
       document.getElementById("total-expense-display").innerText =
